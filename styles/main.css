@@ -10,3 +10,16 @@ main img {
   height: 286px;
   object-fit: cover;
 }
+
+@media (width <= 425px) {
+  main img {
+    width: 100%;
+  }
+}
+
+@media (width = 768px) {
+  main img {
+    width: 324px;
+    height: 324px;
+  }
+}

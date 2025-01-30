@@ -8,3 +8,23 @@ footer {
 footer span:nth-child(1) {
   margin-right: auto;
 }
+
+footer > div {
+  display: flex;
+  gap: 16px;
+}
+
+@media (width <= 425px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer span:nth-child(1) {
+    margin-right: 0;
+  }
+
+  footer > div {
+    justify-content: center;
+  }
+}
